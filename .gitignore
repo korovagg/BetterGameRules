@@ -1,0 +1,61 @@
+# ============================================================
+# Universal .gitignore for Minecraft mod projects
+# (Fabric Loom, NeoGradle, Architectury/MultiLoader, any layout)
+# Recursive "**/" patterns cover every current and future
+# mod subproject at any nesting depth.
+# NOTE: gradle.properties files are intentionally TRACKED
+# for every mod subproject (versions live there).
+# ============================================================
+
+# ---------- Gradle ----------
+**/.gradle/
+**/build/
+**/out/
+**/gradle.properties.bak
+gradle-app.setting
+
+# ---------- Minecraft dev runs & caches ----------
+**/run/
+**/.run/
+**/logs/
+*.log
+
+# ---------- Compiled Java output (outside Gradle build dirs) ----------
+**/bin/
+**/classes/
+*.class
+*.war
+*.ear
+*.hprof
+*.jfr
+hs_err_*.log
+replay_*.log
+
+# ---------- IDE: IntelliJ IDEA ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# ---------- IDE: Eclipse / STS ----------
+.project
+.classpath
+.settings/
+.factorypath
+*.launch
+bin/
+.apt_generated/
+.sts4-cache/
+
+# ---------- IDE: VS Code ----------
+.vscode/
+
+# ---------- OS ----------
+.DS_Store
+**/.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---------- Agent / tooling state ----------
+.kilo/

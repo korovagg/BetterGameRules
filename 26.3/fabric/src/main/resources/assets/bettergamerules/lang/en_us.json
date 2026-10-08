@@ -1,0 +1,18 @@
+{
+  "bettergamerules.filter": "Filter",
+  "bettergamerules.filter.all": "All",
+  "bettergamerules.filter.boolean": "Boolean",
+  "bettergamerules.filter.integer": "Integer",
+  "bettergamerules.filter.modified": "Modified",
+  "bettergamerules.reset_all": "Reset all",
+  "bettergamerules.presets": "Presets...",
+  "bettergamerules.presets.title": "Game Rule Presets",
+  "bettergamerules.presets.save": "Save current",
+  "bettergamerules.presets.load": "Load",
+  "bettergamerules.presets.delete": "Delete",
+  "bettergamerules.presets.name_hint": "Preset name...",
+  "bettergamerules.presets.empty": "No saved presets.",
+  "bettergamerules.no_match": "No rules match the filter.",
+  "bettergamerules.reset_rule": "Reset to default",
+  "bettergamerules.pinned": "★ Pinned (%s)"
+}
