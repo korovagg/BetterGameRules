@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "bettergamerules",
+	"version": "${version}",
+	"name": "Better Game Rules",
+	"description": "Improves the Game Rules menu: type filters, rule pinning, presets and a reworked layout.",
+	"authors": ["KoroWin"],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/better-game-rules",
+		"sources": "https://github.com/korovagg/BetterGameRules",
+		"issues": "https://github.com/korovagg/BetterGameRules/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/bettergamerules/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.bettergamerules.client.BetterGameRulesClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "bettergamerules.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"java": ">=25",
+		"minecraft": "~26.2",
+		"fabricloader": ">=0.19.5",
+		"fabric-api": "*"
+	}
+}
