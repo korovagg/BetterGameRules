@@ -3,6 +3,9 @@
 # Better Game Rules
 </center>
 
+![Game Rules Menu](https://cdn.modrinth.com/data/cached_images/186581f6886776040ecea62e910fe81332d97182.png)
+---
+
 Better Game Rules is a **Fabric** and **NeoForge** mod that overhauls the Game Rules menu: search and type filters (all/boolean/integer/modified), pinning rules to the top of the list, named presets with a preset list, per-rule and global reset buttons, and a reworked layout with rule IDs and tooltips.
 
 

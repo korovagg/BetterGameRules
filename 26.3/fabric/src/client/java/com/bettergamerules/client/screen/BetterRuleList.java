@@ -213,12 +213,13 @@ public class BetterRuleList extends ContainerObjectSelectionList<BetterRuleList.
 				list.rebuildPreserveScroll();
 			}).size(PIN_BUTTON_WIDTH, 20).build();
 			Button resetButton = Button.builder(Component.literal("R"), b -> {
-				GameRuleUI.resetToDefault(gameRules, rule);
 				Entry entry = RuleEntryRef.get(list, rule);
-				if (entry != null) {
-					list.listener.clearInvalid(entry);
+				if (entry instanceof RuleEntry ruleEntry) {
+					ruleEntry.resetToDefault();
+				} else {
+					GameRuleUI.resetToDefault(gameRules, rule);
+					list.refreshStates();
 				}
-				list.refreshStates();
 			}).size(RESET_BUTTON_WIDTH, 20).build();
 			resetButton.setTooltip(net.minecraft.client.gui.components.Tooltip.create(Component.translatable("bettergamerules.reset_rule")));
 			AbstractWidget valueWidget;
@@ -275,6 +276,22 @@ public class BetterRuleList extends ContainerObjectSelectionList<BetterRuleList.
 				}
 			});
 			return input;
+		}
+
+		public void resetToDefault() {
+			GameRuleUI.resetToDefault(this.list.gameRules, this.rule);
+			this.syncValueWidget();
+			this.list.listener.clearInvalid(this);
+			this.list.refreshStates();
+		}
+
+		@SuppressWarnings("unchecked")
+		private void syncValueWidget() {
+			if (this.valueWidget instanceof CycleButton && this.rule.gameRuleType() == GameRuleType.BOOL) {
+				((CycleButton<Boolean>) this.valueWidget).setValue(this.list.gameRules.get((GameRule<Boolean>) this.rule));
+			} else if (this.valueWidget instanceof EditBox input) {
+				input.setValue(GameRuleUI.serializeCurrent(this.list.gameRules, this.rule));
+			}
 		}
 
 		public void refreshState() {
