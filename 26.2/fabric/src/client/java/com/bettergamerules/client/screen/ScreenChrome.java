@@ -22,7 +22,7 @@ import net.minecraft.world.level.gamerules.GameRules;
 
 public final class ScreenChrome implements BetterRuleList.Listener {
 	private static final Component TITLE = Component.translatable("editGamerule.title");
-	private static final Component SEARCH_HINT = Component.translatable("gui.game_rule.search").withStyle(EditBox.SEARCH_HINT_STYLE);
+	private static final Component SEARCH_HINT = Component.translatable("bettergamerules.search_hint").withStyle(EditBox.SEARCH_HINT_STYLE);
 	private static final int HEADER_HEIGHT = 62;
 
 	public interface Host {

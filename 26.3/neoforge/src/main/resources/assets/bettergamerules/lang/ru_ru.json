@@ -1,0 +1,19 @@
+{
+  "bettergamerules.search_hint": "Поиск...",
+  "bettergamerules.filter": "Фильтр",
+  "bettergamerules.filter.all": "Все",
+  "bettergamerules.filter.boolean": "Логические",
+  "bettergamerules.filter.integer": "Числовые",
+  "bettergamerules.filter.modified": "Изменённые",
+  "bettergamerules.reset_all": "Сбросить всё",
+  "bettergamerules.presets": "Пресеты...",
+  "bettergamerules.presets.title": "Пресеты игровых правил",
+  "bettergamerules.presets.save": "Сохранить текущий",
+  "bettergamerules.presets.load": "Загрузить",
+  "bettergamerules.presets.delete": "Удалить",
+  "bettergamerules.presets.name_hint": "Название пресета...",
+  "bettergamerules.presets.empty": "Нет сохранённых пресетов.",
+  "bettergamerules.no_match": "Нет правил, подходящих под фильтр.",
+  "bettergamerules.reset_rule": "Сбросить",
+  "bettergamerules.pinned": "★ Закреплённые (%s)"
+}

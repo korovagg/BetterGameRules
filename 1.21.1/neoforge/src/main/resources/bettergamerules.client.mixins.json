@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "com.bettergamerules.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MinecraftMixin",
+		"EditGameRulesScreenAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.bettergamerules.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"GuiMixin",
+		"AbstractGameRulesScreenAccessor",
+		"InWorldGameRulesScreenAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
